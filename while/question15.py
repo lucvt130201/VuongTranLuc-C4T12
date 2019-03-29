@@ -8,7 +8,7 @@ while True:
     m = int(currentDT.strftime("%M"))
     s = int(currentDT.strftime("%S"))
 
-    if h == 9 and m == 34 and s == 00:
+    if h == 9 and m == 34  and s == 00:
         print("It's time")
         music = pyglet.resource.media("sample.wav")
         music.play()

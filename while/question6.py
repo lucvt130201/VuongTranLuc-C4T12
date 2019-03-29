@@ -15,7 +15,7 @@ while True:
             break
         elif ans >= 1 and ans <= 4 and ans != 3:
             print("Your ans is:", ans)
-            print("Wrong! The anser is 3")
+            print("Wrong! The answer is 3")
             break
         else:
             print("your ans must be 1, 2, 3 or 4 only. Please enter again.")
