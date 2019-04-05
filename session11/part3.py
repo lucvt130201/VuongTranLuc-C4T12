@@ -10,20 +10,16 @@ laptop = {
 for key, value in laptop.items():
     print(key, value, sep = ":")
 
-total = 0
-for i in laptop.values():
-    total += i
+while True: 
 
-print("Total numbers of laptop are: ", total)
+    total = 0
+    for v in laptop.values():
+        total += v
+    
+    print("total number of computer is: ", total)
 
-laptop["FUJITSU"] = 15
-laptop["ALIENWARE"] = 5
-
-total = 0
-for i in laptop.values():
-    total += i
+    new_computer = input("Enter the label of the computer: ").upper()
+    number = int(input("enter the number of computers: "))
+    laptop[new_computer] = number
 
 
-print('After add, we have:')
-
-print(total)

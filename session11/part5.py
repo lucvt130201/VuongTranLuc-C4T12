@@ -20,7 +20,7 @@ ask = input("which one was be sold and how many(separated by ':')")
 sold = ask.split(":")
 
 if sold[0].upper() in warehouse:
-    warehouse[sold[0]] -= int(sold[1])
+    warehouse[sold[0].upper()] -= int(sold[1])
     print("After sold: ")
     print(warehouse)
 else:
